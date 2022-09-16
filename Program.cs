@@ -49,7 +49,7 @@ Console.WriteLine(max);
 4 -> да
 -3 -> нет
 7 -> нет
-*/
+
 Console.Write("Введите число: ");
 int a=int.Parse(Console.ReadLine());
 if (a%2==0)
@@ -67,5 +67,17 @@ else
 5 -> 2, 4
 8 -> 2, 4, 6, 8
 */
+Console.Write("Введите число N: ");
+int N=int.Parse(Console.ReadLine());
+
+Console.Write(2); // первую 2 напечаем "вручную" и начем с 4 иначе красиво с запятой не получится, будет , 2, 4, 6 ..... А мы же красиво хотим)))
+int count=4;
+while (count<=N)
+{
+    Console.Write($", {count}");
+    count+=2;
+}
+
+
 
 
